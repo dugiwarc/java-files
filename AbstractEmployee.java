@@ -1,17 +1,22 @@
-public class Employee {
+public abstract class AbstractEmployee {
     private String name;
     private String address;
     private int number;
 
-    public Employee(String name, String address, int number) {
+    public AbstractEmployee(String name, String address, int number) {
         System.out.println("Constructing an Employee");
         this.name = name;
         this.address = address;
         this.number = number;
     }
 
-    public void mailCheck() {
-        System.out.println("Mailing a check to " + name + " " + address);
+    public double computePay() {
+        System.out.println("Inside Employee computePay");
+        return 0.0;
+    }
+
+    public void MailCheck() {
+        System.out.println("Mailing a check to " + this.name + " " + this.address);
     }
 
     public String toString() {
@@ -33,4 +38,5 @@ public class Employee {
     public int getNumber() {
         return number;
     }
+
 }
