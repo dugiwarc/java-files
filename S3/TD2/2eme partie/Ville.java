@@ -3,12 +3,12 @@ public class Ville {
     protected int nbHabitants;
 
     public Ville(String nom) {
-        this.nom = nom.toUpperCase();
+        this(nom, 0);
     }
 
     public Ville(String nom, int nbHabitants) {
-        this.nom = nom.toUpperCase();
-        this.nbHabitants = nbHabitants > 0 ? nbHabitants : 0;
+        nom = nom.toUpperCase();
+        setNbHabitants(nbHabitants);
     }
 
     public String getNom() {

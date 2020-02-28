@@ -1,7 +1,7 @@
 public class TestAnimaux {
     public static void main(String[] args) {
         Animal a = new Animal("Joe");
-        Oiseau o = new Oiseau("le piaf");
+        Oiseau o = new Perroquet("le piaf");
         Perroquet p = new Perroquet("Coco");
         Animal[] tab = new Animal[5];
         tab[0] = a;

@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Calculatrice {
     public static void main(String[] args) {
-
+        System.out.println(args);
         int leftOP = Integer.parseInt(args[0]);
         int rightOP = Integer.parseInt(args[2]);
 
